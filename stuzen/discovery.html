@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Requirements Discovery Questionnaire | STUZEN TECHNOLOGIES</title>
+  <meta name="description" content="Official Client Requirements Discovery Questionnaire for Stuzen Technologies. Define your website specifications, features, WhatsApp integrations, timeline and budget.">
+  <link rel="icon" type="image/png" href="assets/images/stuzen-icon.png">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="Stuzen Technologies Home">
+        <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies - Learn. Build. Innovate." class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="discovery.html" class="nav-link active">Discovery Wizard</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="btn btn-secondary btn-sm">Talk to Team</a>
+
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo-link">
+          <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies Logo" class="brand-logo-img">
+        </a>
+        <button class="drawer-close" aria-label="Close menu" style="color: var(--text-muted); font-size: 1.5rem;">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="services.html" class="drawer-link">Our Services</a>
+        <a href="portfolio.html" class="drawer-link">Portfolio & Case Studies</a>
+        <a href="discovery.html" class="drawer-link active">Discovery Wizard</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+      </div>
+    </div>
+    <div class="drawer-footer">
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-secondary btn-block">WhatsApp Chat</a>
+    </div>
+  </aside>
+
+  <!-- Page Title & Header -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>STUZEN TECHNOLOGIES — INTERNAL & CLIENT DISCOVERY</span>
+        </div>
+        <h1 class="section-title">Website Project Requirements Discovery Form</h1>
+        <p class="section-desc">
+          A structured discovery tool to map your business, website goals, design preferences, required features, WhatsApp automations, budget and delivery timeline before development begins.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Discovery Form Wizard
+       ======================================================================== -->
+  <main class="container" style="margin-bottom: 5rem;">
+    <div class="discovery-container">
+      <!-- Progress Bar -->
+      <div class="discovery-progress-bar-wrap">
+        <div class="discovery-progress-fill"></div>
+      </div>
+
+      <!-- Navigation Tabs across 10 Sections -->
+      <div class="discovery-steps-nav">
+        <button type="button" class="discovery-step-tab active" data-step="1">
+          <span class="step-tab-badge">1</span>
+          <span>01 Business</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="2">
+          <span class="step-tab-badge">2</span>
+          <span>02 Goals</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="3">
+          <span class="step-tab-badge">3</span>
+          <span>03 Pages</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="4">
+          <span class="step-tab-badge">4</span>
+          <span>04 Design</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="5">
+          <span class="step-tab-badge">5</span>
+          <span>05 Features</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="6">
+          <span class="step-tab-badge">6</span>
+          <span>06 WhatsApp</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="7">
+          <span class="step-tab-badge">7</span>
+          <span>07 Technical</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="8">
+          <span class="step-tab-badge">8</span>
+          <span>08 Marketing</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="9">
+          <span class="step-tab-badge">9</span>
+          <span>09 Budget</span>
+        </button>
+        <button type="button" class="discovery-step-tab" data-step="10">
+          <span class="step-tab-badge">10</span>
+          <span>10 Summary</span>
+        </button>
+      </div>
+
+      <!-- Form Core -->
+      <form id="discoveryForm" class="discovery-form-body" onsubmit="event.preventDefault();">
+
+        <!-- ====================================================================
+             STEP 1: 01 CLIENT & BUSINESS DETAILS
+             ==================================================================== -->
+        <div class="discovery-step-pane active" id="stepPane1">
+          <div class="step-header">
+            <div class="step-section-tag">Section 01 of 10</div>
+            <h2 class="step-title">Client & Business Details</h2>
+            <p class="step-instruction">Tell us about yourself, your business profile, and your core commercial offerings.</p>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="q1_clientName">1. Client / Contact Person Name <span class="required">*</span></label>
+              <input type="text" id="q1_clientName" name="q1_clientName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="q2_brandName">2. Business / Brand Name <span class="required">*</span></label>
+              <input type="text" id="q2_brandName" name="q2_brandName" class="form-input" placeholder="e.g. Nexus Enterprises" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="q3_industry">3. Industry / Business Category</label>
+              <input type="text" id="q3_industry" name="q3_industry" class="form-input" placeholder="e.g. Healthcare, E-Commerce, Logistics, Real Estate">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="q4_contact">4. Phone / WhatsApp Number & Email</label>
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="text" id="q4_contact" name="q4_contact" class="form-input" placeholder="+91 98765 43210" style="flex: 1;">
+                <input type="email" id="q4_email" name="q4_email" class="form-input" placeholder="name@company.com" style="flex: 1;">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q5_currentLinks">5. Current Website & Social Media Links (if any)</label>
+            <input type="text" id="q5_currentLinks" name="q5_currentLinks" class="form-input" placeholder="https://example.com, LinkedIn, Instagram links">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q6_businessDesc">6. Briefly describe your business and the products or services you offer</label>
+            <textarea id="q6_businessDesc" name="q6_businessDesc" class="form-textarea" placeholder="Describe your primary offerings, target value proposition, and customer journey..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q7_decisionMaker">7. Who is the main decision-maker for this project?</label>
+            <input type="text" id="q7_decisionMaker" name="q7_decisionMaker" class="form-input" placeholder="e.g. Founder, Marketing Director, CTO">
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary" disabled>Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Project Goals →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 2: 02 PROJECT GOALS & AUDIENCE
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane2">
+          <div class="step-header">
+            <div class="step-section-tag">Section 02 of 10</div>
+            <h2 class="step-title">Project Goals & Target Audience</h2>
+            <p class="step-instruction">Define what you need to achieve and how visitors will interact with your digital platform.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">8. What is the main purpose of this website? (Select all that apply)</label>
+            <div class="options-tile-grid">
+              <label class="option-tile">
+                <input type="checkbox" name="q8_purpose" value="leads">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Generate Enquiries / Leads</span>
+                  <span class="tile-sub">High-converting forms & calls to action</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="checkbox" name="q8_purpose" value="showcase">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Showcase Company & Services</span>
+                  <span class="tile-sub">Brand presentation & case studies</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="checkbox" name="q8_purpose" value="ecommerce">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Sell Products Online</span>
+                  <span class="tile-sub">E-commerce, cart & checkout</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="checkbox" name="q8_purpose" value="bookings">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Accept Bookings / Appointments</span>
+                  <span class="tile-sub">Calendar sync & automated reservations</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="checkbox" name="q8_purpose" value="portal">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Customer / Member Portal</span>
+                  <span class="tile-sub">Protected login, user dashboards</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="checkbox" name="q8_purpose" value="credibility">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Build Brand Credibility</span>
+                  <span class="tile-sub">Premium, trustworthy market presence</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q9_targetAudience">9. Who are your target customers?</label>
+            <span class="form-sublabel">Mention customer type, location, age group or demographic profile</span>
+            <input type="text" id="q9_targetAudience" name="q9_targetAudience" class="form-input" placeholder="e.g. B2B enterprises in US/Europe, retail buyers aged 25-45">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q10_visitorActions">10. What should visitors do on your website?</label>
+            <span class="form-sublabel">For example: call, WhatsApp, submit a form, buy, book or request a quote</span>
+            <input type="text" id="q10_visitorActions" name="q10_visitorActions" class="form-input" placeholder="e.g. WhatsApp consultation click, request a quotation, register account">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q11_problemSolved">11. What business problem should this website solve?</label>
+            <textarea id="q11_problemSolved" name="q11_problemSolved" class="form-textarea" placeholder="e.g. Current website looks outdated, poor lead conversions, zero mobile responsiveness, manual order taking..."></textarea>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Page Structure →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 3: 03 WEBSITE TYPE & PAGE STRUCTURE
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane3">
+          <div class="step-header">
+            <div class="step-section-tag">Section 03 of 10</div>
+            <h2 class="step-title">Website Type & Page Structure</h2>
+            <p class="step-instruction">Select the format and architecture required for your web platform.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">12. What type of website do you need?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected">
+                <input type="radio" name="q12_siteType" value="corporate" checked>
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Business / Corporate</span>
+                  <span class="tile-sub">Professional enterprise presence</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q12_siteType" value="service">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Service-Based Website</span>
+                  <span class="tile-sub">Service breakdowns & inquiry flows</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q12_siteType" value="ecommerce">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">E-Commerce / Store</span>
+                  <span class="tile-sub">Catalog, cart, and payment gateway</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q12_siteType" value="portal">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Web App / Customer Portal</span>
+                  <span class="tile-sub">Dynamic database & authentication</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q12_siteType" value="landing">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">High-Conversion Landing Page</span>
+                  <span class="tile-sub">Direct response campaign page</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q12_siteType" value="booking">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Booking / Appointment Site</span>
+                  <span class="tile-sub">Real-time scheduling workflows</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">13. Which pages do you need? (Check all required)</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="checkbox" name="q13_pages" value="home" checked><span class="custom-control-box"></span><span class="tile-title">Home</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q13_pages" value="about" checked><span class="custom-control-box"></span><span class="tile-title">About Us</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q13_pages" value="services" checked><span class="custom-control-box"></span><span class="tile-title">Our Services</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="service_details"><span class="custom-control-box"></span><span class="tile-title">Service Detail Pages</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="shop"><span class="custom-control-box"></span><span class="tile-title">Products / Shop</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="portfolio"><span class="custom-control-box"></span><span class="tile-title">Portfolio / Projects</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="testimonials"><span class="custom-control-box"></span><span class="tile-title">Testimonials / Reviews</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="faq"><span class="custom-control-box"></span><span class="tile-title">FAQ Accordion</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q13_pages" value="contact" checked><span class="custom-control-box"></span><span class="tile-title">Contact Us</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="pricing"><span class="custom-control-box"></span><span class="tile-title">Pricing / Plans</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="blog"><span class="custom-control-box"></span><span class="tile-title">Blog / Articles</span></label>
+              <label class="option-tile"><input type="checkbox" name="q13_pages" value="login"><span class="custom-control-box"></span><span class="tile-title">Login / Dashboard</span></label>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">15. Do you already have website content?</label>
+              <div class="options-tile-grid" style="grid-template-columns: 1fr;">
+                <label class="option-tile"><input type="radio" name="q15_contentReady" value="ready"><span class="custom-control-box"></span><span class="tile-title">Yes, ready to provide</span></label>
+                <label class="option-tile selected"><input type="radio" name="q15_contentReady" value="some" checked><span class="custom-control-box"></span><span class="tile-title">Some content ready, need polish</span></label>
+                <label class="option-tile"><input type="radio" name="q15_contentReady" value="need_help"><span class="custom-control-box"></span><span class="tile-title">No, need Stuzen to help write copy</span></label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q16_contentProvider">16. Who will provide text, photos and assets?</label>
+              <input type="text" id="q16_contentProvider" name="q16_contentProvider" class="form-input" placeholder="e.g. In-house marketing team, Stuzen creative team">
+            </div>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Design & Brand →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 4: 04 DESIGN & BRAND DIRECTION
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane4">
+          <div class="step-header">
+            <div class="step-section-tag">Section 04 of 10</div>
+            <h2 class="step-title">Design & Brand Direction</h2>
+            <p class="step-instruction">Select the visual aesthetic and brand identity guidance for your project.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">17. Do you have a logo and brand guidelines?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="checkbox" name="q17_branding" value="logo" checked><span class="custom-control-box"></span><span class="tile-title">Logo Ready</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q17_branding" value="colors" checked><span class="custom-control-box"></span><span class="tile-title">Brand Colours Selected</span></label>
+              <label class="option-tile"><input type="checkbox" name="q17_branding" value="fonts"><span class="custom-control-box"></span><span class="tile-title">Typography / Fonts Ready</span></label>
+              <label class="option-tile"><input type="checkbox" name="q17_branding" value="need_help"><span class="custom-control-box"></span><span class="tile-title">Need Full Branding Package</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">18. Which design style do you prefer?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected">
+                <input type="radio" name="q18_designStyle" value="modern_premium" checked>
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Modern / Premium</span>
+                  <span class="tile-sub">Sleek gradients, dark mode, tech feel</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q18_designStyle" value="minimal">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Minimal / Clean</span>
+                  <span class="tile-sub">High whitespace, crisp typography</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q18_designStyle" value="corporate">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Corporate / Professional</span>
+                  <span class="tile-sub">Trust-oriented, structured layout</span>
+                </div>
+              </label>
+
+              <label class="option-tile">
+                <input type="radio" name="q18_designStyle" value="futuristic">
+                <span class="custom-control-box"></span>
+                <div class="tile-content">
+                  <span class="tile-title">Bold / Futuristic</span>
+                  <span class="tile-sub">Cyberpunk, high-tech glow, neon</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="q19_referenceSites">19. Share 2–3 websites you like and what you like about them</label>
+              <textarea id="q19_referenceSites" name="q19_referenceSites" class="form-textarea" placeholder="e.g. stripe.com (clean layout), linear.app (dark aesthetic)"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q20_avoidStyles">20. Any colours, layouts or styles you want to avoid?</label>
+              <textarea id="q20_avoidStyles" name="q20_avoidStyles" class="form-textarea" placeholder="e.g. Avoid heavy orange colors, avoid cluttered sidebars"></textarea>
+            </div>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Features & Functionality →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 5: 05 FEATURES & FUNCTIONALITY
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane5">
+          <div class="step-header">
+            <div class="step-section-tag">Section 05 of 10</div>
+            <h2 class="step-title">Features & Functionality</h2>
+            <p class="step-instruction">Select all interactive components and operational tools required for the build.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">22. Which features do you require? (Check all that apply)</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="checkbox" name="q22_features" value="contact" checked><span class="custom-control-box"></span><span class="tile-title">Contact / Enquiry Form</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q22_features" value="call_btn" checked><span class="custom-control-box"></span><span class="tile-title">Click-to-Call Button</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q22_features" value="whatsapp" checked><span class="custom-control-box"></span><span class="tile-title">WhatsApp Chat Button</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="chat"><span class="custom-control-box"></span><span class="tile-title">Live Chat / AI Chatbot</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="login"><span class="custom-control-box"></span><span class="tile-title">Customer Login / Auth</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="admin"><span class="custom-control-box"></span><span class="tile-title">Admin Dashboard</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="search"><span class="custom-control-box"></span><span class="tile-title">Search & Dynamic Filters</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="gallery"><span class="custom-control-box"></span><span class="tile-title">Image / Video Gallery</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="booking"><span class="custom-control-box"></span><span class="tile-title">Appointment / Booking Engine</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="payment"><span class="custom-control-box"></span><span class="tile-title">Online Payment Gateway</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="cart"><span class="custom-control-box"></span><span class="tile-title">Shopping Cart & Checkout</span></label>
+              <label class="option-tile"><input type="checkbox" name="q22_features" value="maps"><span class="custom-control-box"></span><span class="tile-title">Google Maps / Location Embed</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q23_specialFeature">23. Explain how any special feature should work</label>
+            <span class="form-sublabel">Describe the process step-by-step from the user's point of view</span>
+            <textarea id="q23_specialFeature" name="q23_specialFeature" class="form-textarea" placeholder="e.g. User selects service -> picks calendar date -> completes form -> receives instant WhatsApp confirmation and staff gets alerted in CRM."></textarea>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: WhatsApp & Automation →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 6: 06 WHATSAPP, INTEGRATIONS & AUTOMATION
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane6">
+          <div class="step-header">
+            <div class="step-section-tag">Section 06 of 10</div>
+            <h2 class="step-title">WhatsApp, Integrations & Automation</h2>
+            <p class="step-instruction">Configure customer communication pipelines, WhatsApp bots, and third-party tools.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">26. What should customers be able to do through WhatsApp?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="checkbox" name="q26_whatsapp" value="click_to_chat" checked><span class="custom-control-box"></span><span class="tile-title">Simple Click-to-Chat</span></label>
+              <label class="option-tile selected"><input type="checkbox" name="q26_whatsapp" value="prefilled" checked><span class="custom-control-box"></span><span class="tile-title">Pre-filled Enquiry Message</span></label>
+              <label class="option-tile"><input type="checkbox" name="q26_whatsapp" value="lead_alert"><span class="custom-control-box"></span><span class="tile-title">Send Lead Details to Staff</span></label>
+              <label class="option-tile"><input type="checkbox" name="q26_whatsapp" value="auto_replies"><span class="custom-control-box"></span><span class="tile-title">Approved Automated Replies</span></label>
+              <label class="option-tile"><input type="checkbox" name="q26_whatsapp" value="booking_alerts"><span class="custom-control-box"></span><span class="tile-title">Order / Booking Notifications</span></label>
+              <label class="option-tile"><input type="checkbox" name="q26_whatsapp" value="business_platform"><span class="custom-control-box"></span><span class="tile-title">WhatsApp Business Cloud API</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q27_toolConnections">27. Which existing business tools should connect to the website?</label>
+            <span class="form-sublabel">Examples: CRM (HubSpot, Zoho), billing (Razorpay, Stripe), Google Sheets, Mailchimp</span>
+            <input type="text" id="q27_toolConnections" name="q27_toolConnections" class="form-input" placeholder="e.g. Google Sheets for inquiries, Stripe for card payments, HubSpot CRM">
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Technical Requirements →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 7: 07 TECHNICAL & OPERATIONAL
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane7">
+          <div class="step-header">
+            <div class="step-section-tag">Section 07 of 10</div>
+            <h2 class="step-title">Technical & Operational Requirements</h2>
+            <p class="step-instruction">Domain, hosting, security, business emails, and system migration.</p>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">30. Do you already own a domain name?</label>
+              <div class="options-tile-grid" style="grid-template-columns: 1fr;">
+                <label class="option-tile selected"><input type="radio" name="q30_domain" value="yes" checked><span class="custom-control-box"></span><span class="tile-title">Yes, I own the domain</span></label>
+                <label class="option-tile"><input type="radio" name="q30_domain" value="no"><span class="custom-control-box"></span><span class="tile-title">No, need Stuzen assistance</span></label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">31. Do you already have website hosting?</label>
+              <div class="options-tile-grid" style="grid-template-columns: 1fr;">
+                <label class="option-tile"><input type="radio" name="q31_hosting" value="yes"><span class="custom-control-box"></span><span class="tile-title">Yes, existing provider</span></label>
+                <label class="option-tile selected"><input type="radio" name="q31_hosting" value="no" checked><span class="custom-control-box"></span><span class="tile-title">No, recommend Stuzen Cloud</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q34_security">34. Security, user-access or data protection requirements</label>
+            <input type="text" id="q34_security" name="q34_security" class="form-input" placeholder="e.g. SSL certificates, automated daily backups, GDPR / privacy compliance">
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: SEO & Marketing →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 8: 08 SEO, ANALYTICS & MARKETING
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane8">
+          <div class="step-header">
+            <div class="step-section-tag">Section 08 of 10</div>
+            <h2 class="step-title">SEO, Analytics & Marketing</h2>
+            <p class="step-instruction">Search engine visibility, conversion tracking, and advertising campaigns.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">35. What level of SEO support do you need?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="radio" name="q35_seo" value="basic" checked><span class="custom-control-box"></span><span class="tile-title">Basic Technical SEO Setup</span></label>
+              <label class="option-tile"><input type="radio" name="q35_seo" value="ongoing"><span class="custom-control-box"></span><span class="tile-title">Ongoing Keyword & Content SEO</span></label>
+              <label class="option-tile"><input type="radio" name="q35_seo" value="discuss"><span class="custom-control-box"></span><span class="tile-title">Discuss Custom Strategy</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="q36_searchTerms">36. Which locations or search terms are important to your business?</label>
+            <input type="text" id="q36_searchTerms" name="q36_searchTerms" class="form-input" placeholder="e.g. Software company in Chennai, custom web development India, global AI automation">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">37. Do you need Google Analytics & Conversion Tracking?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="radio" name="q37_analytics" value="yes" checked><span class="custom-control-box"></span><span class="tile-title">Yes (GA4 + Search Console)</span></label>
+              <label class="option-tile"><input type="radio" name="q37_analytics" value="no"><span class="custom-control-box"></span><span class="tile-title">Not required right now</span></label>
+            </div>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Timeline & Budget →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 9: 09 TIMELINE, BUDGET & SUPPORT
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane9">
+          <div class="step-header">
+            <div class="step-section-tag">Section 09 of 10</div>
+            <h2 class="step-title">Timeline, Budget & Support</h2>
+            <p class="step-instruction">Align on delivery milestones and expected project investment.</p>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="q39_deadline">39. Preferred Website Launch Date / Deadline</label>
+              <input type="date" id="q39_deadline" name="q39_deadline" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q40_eventReason">40. Is there an event or business reason for this deadline?</label>
+              <input type="text" id="q40_eventReason" name="q40_eventReason" class="form-input" placeholder="e.g. Product launch, investor meeting, expo">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">41. What is the expected project budget range?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile"><input type="radio" name="q41_budget" value="under_500"><span class="custom-control-box"></span><span class="tile-title">&lt; $500 (Starter Landing)</span></label>
+              <label class="option-tile selected"><input type="radio" name="q41_budget" value="500_1500" checked><span class="custom-control-box"></span><span class="tile-title">$500 – $1,500 (Professional Web)</span></label>
+              <label class="option-tile"><input type="radio" name="q41_budget" value="1500_3500"><span class="custom-control-box"></span><span class="tile-title">$1,500 – $3,500 (Custom Platform)</span></label>
+              <label class="option-tile"><input type="radio" name="q41_budget" value="3500_plus"><span class="custom-control-box"></span><span class="tile-title">$3,500+ (Enterprise & AI)</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">42. What support do you need after launch?</label>
+            <div class="options-tile-grid">
+              <label class="option-tile selected"><input type="radio" name="q42_support" value="monthly" checked><span class="custom-control-box"></span><span class="tile-title">Monthly Maintenance & Backups</span></label>
+              <label class="option-tile"><input type="radio" name="q42_support" value="ondemand"><span class="custom-control-box"></span><span class="tile-title">On-Demand Support</span></label>
+              <label class="option-tile"><input type="radio" name="q42_support" value="none"><span class="custom-control-box"></span><span class="tile-title">No support needed</span></label>
+            </div>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Previous</button>
+            <button type="button" class="btn btn-primary btn-next-step">
+              <span>Next: Review & Generate Brief →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             STEP 10: 10 SUMMARY & PROPOSAL GENERATOR
+             ==================================================================== -->
+        <div class="discovery-step-pane" id="stepPane10">
+          <div class="step-header">
+            <div class="step-section-tag">Section 10 of 10</div>
+            <h2 class="step-title">Final Scope & Instant Proposal Summary</h2>
+            <p class="step-instruction">Review your recorded requirements and generate your official Stuzen project brief.</p>
+          </div>
+
+          <div class="proposal-summary-card">
+            <div class="summary-header">
+              <div>
+                <h3 style="font-size: 1.25rem;">STUZEN TECHNOLOGIES — INTERNAL PROJECT SUMMARY</h3>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Requirements Discovery Record</span>
+              </div>
+              <span class="summary-badge-stuzen">LEARN. BUILD. INNOVATE.</span>
+            </div>
+
+            <div class="summary-row">
+              <span class="summary-key">Client Name:</span>
+              <span class="summary-val" id="summaryClientName">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Brand / Business:</span>
+              <span class="summary-val" id="summaryBrandName">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Industry:</span>
+              <span class="summary-val" id="summaryIndustry">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Contact / Email:</span>
+              <span class="summary-val" id="summaryContact">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Primary Goals:</span>
+              <span class="summary-val" id="summaryPurpose">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Website Type:</span>
+              <span class="summary-val" id="summarySiteType">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Agreed Pages:</span>
+              <span class="summary-val" id="summaryPages">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Design Aesthetic:</span>
+              <span class="summary-val" id="summaryDesignStyle">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Selected Features:</span>
+              <span class="summary-val" id="summaryFeatures">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">WhatsApp Automation:</span>
+              <span class="summary-val" id="summaryWhatsApp">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Budget Bracket:</span>
+              <span class="summary-val" id="summaryBudget">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-key">Target Launch Date:</span>
+              <span class="summary-val" id="summaryDeadline">—</span>
+            </div>
+
+            <!-- Dynamic Live Estimates -->
+            <div class="cost-timeline-estimate">
+              <div class="estimate-box">
+                <div class="estimate-val" id="estProjectCost">$750+</div>
+                <div class="estimate-lbl">Calculated Est. Investment</div>
+              </div>
+              <div class="estimate-box">
+                <div class="estimate-val" id="estProjectTimeline">2-4 Weeks</div>
+                <div class="estimate-lbl">Estimated Build Turnaround</div>
+              </div>
+            </div>
+
+            <!-- Discovery Acknowledgement & Signatures (Matching PDF Page 11) -->
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--color-primary-cyan); text-transform: uppercase; letter-spacing: 0.05em;">Discovery Acknowledgement</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1.5rem;">
+                This document records the initial requirements discussed for the website project. It serves as an exploratory discovery brief. Final deliverables, revisions, payment schedules, third-party licenses, hosting, and support agreements will be formalized in the official Master Services Agreement.
+              </p>
+              <div class="form-grid-2">
+                <div style="padding: 1rem; background: var(--bg-surface-1); border-radius: var(--radius-sm); border: 1px dashed var(--border-medium);">
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block; margin-bottom: 0.75rem;">Client / Authorized Representative:</span>
+                  <div style="border-bottom: 1px solid var(--border-bright); height: 35px; margin-bottom: 0.5rem;"></div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+                    <span>Signature</span>
+                    <span>Date: __________________</span>
+                  </div>
+                </div>
+                <div style="padding: 1rem; background: var(--bg-surface-1); border-radius: var(--radius-sm); border: 1px dashed var(--border-medium);">
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block; margin-bottom: 0.75rem;">Stuzen Technologies Engineering Lead:</span>
+                  <div style="border-bottom: 1px solid var(--border-bright); height: 35px; margin-bottom: 0.5rem;"></div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+                    <span>Signature</span>
+                    <span>Date: __________________</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+            <button type="button" class="btn btn-primary btn-lg" id="btnExportWhatsApp" style="background: #25d366; border-color: #25d366;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043s.433-.505.549-.679c.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"></path>
+              </svg>
+              <span>Send Requirements via WhatsApp</span>
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-lg" id="btnPrintDiscovery">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              <span>Print / Save as PDF</span>
+            </button>
+
+            <button type="button" class="btn btn-outline btn-lg" id="btnDownloadBrief">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Project Brief JSON</span>
+            </button>
+
+            <button type="button" class="btn btn-outline btn-sm" id="btnResetForm" style="margin-left: auto; color: var(--color-accent-rose); border-color: rgba(244, 63, 94, 0.4);">
+              Clear & Reset Form
+            </button>
+          </div>
+
+          <div class="discovery-footer">
+            <button type="button" class="btn btn-secondary btn-prev-step">← Back to Timeline</button>
+            <a href="contact.html" class="btn btn-primary">
+              <span>Book Discussion Call with Stuzen →</span>
+            </a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 STUZEN TECHNOLOGIES. All rights reserved. Learn. Build. Innovate.</p>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/discovery.js"></script>
+</body>
+</html>
+

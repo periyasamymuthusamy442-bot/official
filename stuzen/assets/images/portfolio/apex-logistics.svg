@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1224"/>
+      <stop offset="50%" stop-color="#0e1a38"/>
+      <stop offset="100%" stop-color="#080e1e"/>
+    </linearGradient>
+    <linearGradient id="apexCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0066f5"/>
+    </linearGradient>
+    <linearGradient id="apexCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142142" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0d1830" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="waGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#128c7e"/>
+      <stop offset="100%" stop-color="#25d366"/>
+    </linearGradient>
+    <filter id="apexGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0066f5" flood-opacity="0.35"/>
+    </filter>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="360" fill="url(#apexBg)"/>
+
+  <!-- Tech Grid Background -->
+  <g opacity="0.12" stroke="#00f0ff" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="500" y1="0" x2="500" y2="360"/>
+  </g>
+
+  <!-- Ambient Blue Aura -->
+  <circle cx="480" cy="80" r="140" fill="#0066f5" opacity="0.18" filter="blur(50px)"/>
+  <circle cx="120" cy="280" r="120" fill="#00f0ff" opacity="0.12" filter="blur(45px)"/>
+
+  <!-- Browser Window Chrome -->
+  <g transform="translate(30, 24)" filter="url(#apexGlow)">
+    <rect width="540" height="312" rx="12" fill="#0d162d" stroke="#1e2c52" stroke-width="1.5"/>
+    <!-- Window Header -->
+    <rect width="540" height="32" rx="12" fill="#132040"/>
+    <rect y="20" width="540" height="12" fill="#132040"/>
+    <!-- Window Controls -->
+    <circle cx="20" cy="16" r="4.5" fill="#ff5f56"/>
+    <circle cx="34" cy="16" r="4.5" fill="#ffbd2e"/>
+    <circle cx="48" cy="16" r="4.5" fill="#27c93f"/>
+    <!-- URL Pill -->
+    <rect x="80" y="8" width="260" height="16" rx="4" fill="#091024"/>
+    <text x="92" y="19.5" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500">https://portal.apexlogistics.io/live-freight</text>
+    
+    <!-- Status badge right -->
+    <rect x="420" y="7" width="105" height="18" rx="9" fill="rgba(0, 240, 255, 0.12)" stroke="rgba(0, 240, 255, 0.4)" stroke-width="1"/>
+    <circle cx="432" cy="16" r="3" fill="#00f0ff"/>
+    <text x="441" y="19" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.5">VESSEL TRACKING</text>
+  </g>
+
+  <!-- Inner App Layout -->
+  <g transform="translate(45, 68)">
+    <!-- Left Column: Container Tracker & Rate Estimator (width: 310) -->
+    <g>
+      <!-- Tracking Header Card -->
+      <rect width="310" height="110" rx="8" fill="url(#apexCard)" stroke="#1e3260" stroke-width="1"/>
+      
+      <text x="16" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-transform="uppercase" letter-spacing="0.8">Active Container Tracking</text>
+      <text x="16" y="44" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800">#APX-98421-HKG</text>
+      <rect x="180" y="32" width="114" height="18" rx="4" fill="rgba(37, 211, 102, 0.15)" stroke="rgba(37, 211, 102, 0.4)" stroke-width="1"/>
+      <text x="188" y="44" fill="#25d366" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700">● IN TRANSIT - ON TIME</text>
+
+      <!-- Progress bar -->
+      <rect x="16" y="62" width="278" height="6" rx="3" fill="#1e293b"/>
+      <rect x="16" y="62" width="210" height="6" rx="3" fill="url(#apexCyan)"/>
+      <circle cx="226" cy="65" r="5" fill="#00f0ff" stroke="#fff" stroke-width="1.5"/>
+
+      <!-- Route Info -->
+      <text x="16" y="85" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">Hong Kong (HKG)</text>
+      <text x="16" y="98" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5">Departed 10 Nov</text>
+
+      <path d="M 140 85 L 160 85" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2,2"/>
+      <polygon points="160,82 165,85 160,88" fill="#38bdf8"/>
+
+      <text x="195" y="85" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">Rotterdam (RTM)</text>
+      <text x="195" y="98" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600">ETA: 2 Days 14 Hrs</text>
+    </g>
+
+    <!-- Bottom Rate Calculator Mini Box -->
+    <g transform="translate(0, 120)">
+      <rect width="310" height="135" rx="8" fill="url(#apexCard)" stroke="#1e3260" stroke-width="1"/>
+      
+      <text x="16" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-transform="uppercase" letter-spacing="0.8">Instant Ocean Freight Calculator</text>
+      
+      <!-- Input fields visual -->
+      <rect x="16" y="36" width="130" height="26" rx="4" fill="#091224" stroke="#253866" stroke-width="1"/>
+      <text x="24" y="52" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9">40' High Cube (FCL)</text>
+
+      <rect x="156" y="36" width="138" height="26" rx="4" fill="#091224" stroke="#253866" stroke-width="1"/>
+      <text x="164" y="52" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9">Weight: 22,500 kg</text>
+
+      <!-- Rate Display -->
+      <rect x="16" y="70" width="278" height="52" rx="6" fill="#0c1730" stroke="#0066f5" stroke-width="1"/>
+      <text x="26" y="92" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9">Calculated Rate:</text>
+      <text x="26" y="112" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900">$3,420.00 <tspan fill="#64748b" font-size="10" font-weight="normal">USD</tspan></text>
+
+      <!-- Action Button -->
+      <rect x="195" y="80" width="90" height="32" rx="6" fill="url(#apexCyan)"/>
+      <text x="240" y="100" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">Book Instant →</text>
+    </g>
+
+    <!-- Right Column: Interactive Map & Live WhatsApp Alerts (width: 185) -->
+    <g transform="translate(325, 0)">
+      <!-- Map Background & Vessel routes -->
+      <rect width="185" height="150" rx="8" fill="#0b1428" stroke="#1e3260" stroke-width="1"/>
+      
+      <!-- Vector Map Landforms Simplified -->
+      <path d="M 15 30 Q 30 15 60 25 T 100 45 T 70 80 T 30 70 Z" fill="#132347" opacity="0.6"/>
+      <path d="M 110 50 Q 140 30 170 50 T 160 110 T 120 120 Z" fill="#132347" opacity="0.6"/>
+      <path d="M 20 100 Q 50 110 70 140 T 30 145 Z" fill="#132347" opacity="0.6"/>
+
+      <!-- Glowing Route Lines -->
+      <path d="M 35 45 Q 90 70 145 95" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M 35 45 Q 90 70 145 95" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+      <!-- Route Points -->
+      <circle cx="35" cy="45" r="4" fill="#00f0ff"/>
+      <circle cx="145" cy="95" r="4" fill="#25d366"/>
+      <!-- Cargo Vessel Icon / Marker -->
+      <g transform="translate(85, 62)">
+        <circle cx="8" cy="8" r="10" fill="#0066f5"/>
+        <circle cx="8" cy="8" r="5" fill="#ffffff"/>
+      </g>
+
+      <text x="12" y="140" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600">Global Vessel AIS Live</text>
+
+      <!-- WhatsApp Live Notification Toast -->
+      <g transform="translate(0, 160)" filter="url(#softGlow)">
+        <rect width="185" height="95" rx="8" fill="#0f211c" stroke="#128c7e" stroke-width="1.2"/>
+        
+        <!-- Header -->
+        <rect width="185" height="22" rx="8" fill="url(#waGreen)"/>
+        <rect y="12" width="185" height="10" fill="url(#waGreen)"/>
+        
+        <circle cx="15" cy="11" r="5" fill="#ffffff"/>
+        <path d="M 13 11 L 14.5 12.5 L 17 9.5" stroke="#128c7e" stroke-width="1.2" fill="none"/>
+        <text x="25" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700">WhatsApp Lead Alert</text>
+        <text x="172" y="14" text-anchor="end" fill="rgba(255,255,255,0.8)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Just now</text>
+
+        <!-- Message Body -->
+        <text x="10" y="38" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600">New Booking Dispatched!</text>
+        <text x="10" y="52" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Rate: $3,420 • 40' FCL</text>
+        <text x="10" y="64" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Client: Global Forwarding Inc.</text>
+        
+        <rect x="10" y="73" width="75" height="14" rx="3" fill="rgba(37, 211, 102, 0.2)"/>
+        <text x="47" y="83" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="700">CRM SYNCED ✔</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="healthBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1926"/>
+      <stop offset="50%" stop-color="#0d2433"/>
+      <stop offset="100%" stop-color="#08141f"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="healthCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#132c3f" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0b1d2b" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="healthGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#10b981" flood-opacity="0.3"/>
+    </filter>
+    <filter id="waShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#healthBg)"/>
+
+  <!-- Tech Grid Background -->
+  <g opacity="0.1" stroke="#00f0ff" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="500" y1="0" x2="500" y2="360"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="140" cy="100" r="130" fill="#10b981" opacity="0.16" filter="blur(48px)"/>
+  <circle cx="480" cy="260" r="140" fill="#00f0ff" opacity="0.14" filter="blur(50px)"/>
+
+  <!-- Browser Window Chrome -->
+  <g transform="translate(30, 24)" filter="url(#healthGlow)">
+    <rect width="540" height="312" rx="12" fill="#0b1b26" stroke="#18364c" stroke-width="1.5"/>
+    <!-- Window Header -->
+    <rect width="540" height="32" rx="12" fill="#102534"/>
+    <rect y="20" width="540" height="12" fill="#102534"/>
+    <!-- Controls -->
+    <circle cx="20" cy="16" r="4.5" fill="#ff5f56"/>
+    <circle cx="34" cy="16" r="4.5" fill="#ffbd2e"/>
+    <circle cx="48" cy="16" r="4.5" fill="#27c93f"/>
+    <!-- URL Pill -->
+    <rect x="80" y="8" width="270" height="16" rx="4" fill="#08141d"/>
+    <text x="92" y="19.5" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500">https://portal.healthsync.ai/patient-intake</text>
+
+    <!-- Status badge right -->
+    <rect x="420" y="7" width="105" height="18" rx="9" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1"/>
+    <circle cx="432" cy="16" r="3" fill="#10b981"/>
+    <text x="441" y="19" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.5">AI AGENT ACTIVE</text>
+  </g>
+
+  <!-- Inner Dashboard Layout -->
+  <g transform="translate(45, 68)">
+    <!-- Left Column: Doctor Appointments & Triage Intake (width: 290) -->
+    <g>
+      <!-- Active Provider Header -->
+      <rect width="290" height="68" rx="8" fill="url(#healthCard)" stroke="#1a3d54" stroke-width="1"/>
+      
+      <!-- Doctor Avatar -->
+      <circle cx="36" cy="34" r="18" fill="#10b981" stroke="#00f0ff" stroke-width="1.5"/>
+      <text x="36" y="38" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800">SN</text>
+      
+      <text x="66" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Dr. Sarah Newman, MD</text>
+      <text x="66" y="42" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9">Cardiology &amp; Internal Medicine</text>
+      <rect x="66" y="48" width="90" height="13" rx="3" fill="rgba(16, 185, 129, 0.2)"/>
+      <text x="111" y="58" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">● 6 APPOINTMENTS TODAY</text>
+
+      <!-- Today's Queue List -->
+      <g transform="translate(0, 78)">
+        <rect width="290" height="175" rx="8" fill="url(#healthCard)" stroke="#1a3d54" stroke-width="1"/>
+        <text x="16" y="22" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-transform="uppercase" letter-spacing="0.6">Automated Patient Intake Queue</text>
+
+        <!-- Patient Item 1 -->
+        <g transform="translate(12, 34)">
+          <rect width="266" height="38" rx="6" fill="#0c202d" stroke="#18364b" stroke-width="1"/>
+          <circle cx="20" cy="19" r="10" fill="#0284c7"/>
+          <text x="20" y="23" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700">EW</text>
+          <text x="38" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">Emma Watson (ID: #4091)</text>
+          <text x="38" y="29" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">10:30 AM • Consultation Follow-up</text>
+          <rect x="185" y="11" width="70" height="16" rx="4" fill="rgba(16, 185, 129, 0.2)"/>
+          <text x="220" y="22" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">IN SESSION</text>
+        </g>
+
+        <!-- Patient Item 2 -->
+        <g transform="translate(12, 80)">
+          <rect width="266" height="38" rx="6" fill="#0c202d" stroke="#18364b" stroke-width="1"/>
+          <circle cx="20" cy="19" r="10" fill="#7c3aed"/>
+          <text x="20" y="23" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700">JD</text>
+          <text x="38" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">James Davis (ID: #4092)</text>
+          <text x="38" y="29" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">11:15 AM • Annual Health Screening</text>
+          <rect x="185" y="11" width="70" height="16" rx="4" fill="rgba(0, 240, 255, 0.15)"/>
+          <text x="220" y="22" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">WA CONFIRMED</text>
+        </g>
+
+        <!-- Patient Item 3 -->
+        <g transform="translate(12, 126)">
+          <rect width="266" height="38" rx="6" fill="#0c202d" stroke="#18364b" stroke-width="1"/>
+          <circle cx="20" cy="19" r="10" fill="#059669"/>
+          <text x="20" y="23" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700">AL</text>
+          <text x="38" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">Anita Lopez (ID: #4093)</text>
+          <text x="38" y="29" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">12:00 PM • Digital ECG Triage</text>
+          <rect x="185" y="11" width="70" height="16" rx="4" fill="rgba(245, 158, 11, 0.2)"/>
+          <text x="220" y="22" text-anchor="middle" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">WAITING ROOM</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Column: AI WhatsApp Bot Interaction Window (width: 205) -->
+    <g transform="translate(305, 0)" filter="url(#waShadow)">
+      <!-- WhatsApp Phone/Card Body -->
+      <rect width="205" height="255" rx="10" fill="#0a1d17" stroke="#128c7e" stroke-width="1.2"/>
+      
+      <!-- WA Header -->
+      <rect width="205" height="42" rx="10" fill="#128c7e"/>
+      <rect y="24" width="205" height="18" fill="#128c7e"/>
+      
+      <circle cx="24" cy="21" r="12" fill="#ffffff"/>
+      <text x="24" y="25" text-anchor="middle" fill="#128c7e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900">⚕</text>
+
+      <text x="44" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700">HealthSync AI Assistant</text>
+      <text x="44" y="29" fill="#bbf7d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Autonomous Triage Bot • Online</text>
+
+      <!-- Chat Bubble 1: Bot -->
+      <g transform="translate(10, 52)">
+        <rect width="185" height="58" rx="8" fill="#13362a" stroke="#1b4d3c" stroke-width="1"/>
+        <text x="10" y="16" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700">Dr. Newman Appointment Confirmed</text>
+        <text x="10" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Hello Emma! Your session is locked</text>
+        <text x="10" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">for today at 10:30 AM (Room 3B).</text>
+        <text x="175" y="52" text-anchor="end" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7">09:00 AM ✔✔</text>
+      </g>
+
+      <!-- Chat Bubble 2: User reply -->
+      <g transform="translate(30, 118)">
+        <rect width="165" height="34" rx="8" fill="#075e54"/>
+        <text x="10" y="15" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Thanks! I completed digital intake</text>
+        <text x="10" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">questionnaire &amp; insurance card.</text>
+      </g>
+
+      <!-- Chat Bubble 3: Bot Sync -->
+      <g transform="translate(10, 160)">
+        <rect width="185" height="48" rx="8" fill="#13362a" stroke="#1b4d3c" stroke-width="1"/>
+        <text x="10" y="16" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700">✔ Intake Received &amp; Verified</text>
+        <text x="10" y="28" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Doctor calendar synced. No wait-</text>
+        <text x="10" y="39" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">time check-in QR code active!</text>
+      </g>
+
+      <!-- Bottom Metric Tag -->
+      <rect x="10" y="218" width="185" height="26" rx="6" fill="#08251c" stroke="#10b981" stroke-width="1"/>
+      <text x="102" y="234" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="800">⚡ 75% Reduction in Admin Overhead</text>
+    </g>
+  </g>
+</svg>

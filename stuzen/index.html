@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUZEN TECHNOLOGIES | Learn. Build. Innovate. — Web, Software & AI Solutions</title>
+  <meta name="description"
+    content="Stuzen Technologies is a next-generation engineering studio delivering high-performance Website Development, Enterprise Custom Software, and Intelligent AI & Automation.">
+  <link rel="icon" type="image/png" href="assets/images/stuzen-icon.png">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       Site Header & Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="Stuzen Technologies Home">
+        <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies - Learn. Build. Innovate."
+          class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="discovery.html" class="nav-link">Discovery Wizard</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="discovery.html" class="btn btn-primary btn-sm btn-glow">
+          <span>Start Project</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Nav Toggle -->
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo-link">
+          <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies Logo" class="brand-logo-img">
+        </a>
+        <button class="drawer-close" aria-label="Close menu"
+          style="color: var(--text-muted); font-size: 1.5rem;">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link active">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="services.html" class="drawer-link">Our Services</a>
+        <a href="portfolio.html" class="drawer-link">Portfolio & Case Studies</a>
+        <a href="discovery.html" class="drawer-link">Discovery Wizard</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+      </div>
+    </div>
+    <div class="drawer-footer">
+      <a href="discovery.html" class="btn btn-primary btn-block">Start Project Discovery</a>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-secondary btn-block">WhatsApp Chat</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Microsoft-Inspired Hero Slider ("Slidebar")
+       ======================================================================== -->
+  <section class="hero-slider-section" id="heroSlider" aria-roledescription="carousel" aria-label="Stuzen highlights">
+    <div class="hero-slider-track" id="sliderTrack">
+
+      <!-- Slide 1: Soft Lavender Pastel Background (Web Architecture) -->
+      <div class="hero-slide slide-lavender">
+        <div class="container slide-grid">
+          <div class="slide-content">
+            <span class="badge-yellow">Coming soon</span>
+            <h1 class="slide-title">Our most advanced Web Architecture lineup</h1>
+            <p class="slide-desc">
+              Big ideas, busy days, creative moments. High-velocity corporate platforms, headless web applications, and
+              lightning-fast digital engines designed to keep pace.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="services.html#web" class="ms-btn-primary">Learn more</a>
+              <a href="discovery.html" class="ms-btn-secondary">Requirements Discovery</a>
+            </div>
+          </div>
+
+          <div class="slide-visual-wrapper">
+            <div class="slide-photo-frame">
+              <img src="assets/images/slide-web-architecture.jpg" alt="Modern Web Architecture Studio Collaboration" class="slide-photo-img" loading="lazy">
+              <div class="pillar-floating-pill">
+                <span class="pill-dot"></span>
+                <span>⚡ Jamstack &amp; Sub-second Web V8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Soft Ice Blue Pastel Background (AI Copilot & WhatsApp Automation) -->
+      <div class="hero-slide slide-ice-blue">
+        <div class="container slide-grid">
+          <div class="slide-content">
+            <span class="badge-yellow">AI Innovation</span>
+            <h1 class="slide-title">Stuzen Copilot & WhatsApp Automation</h1>
+            <p class="slide-desc">
+              Connect customer touchpoints to autonomous 24/7 lead routing bots, automated CRM pipelines, and
+              intelligent document processing.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="services.html#ai" class="ms-btn-primary">Explore AI Solutions</a>
+              <a href="contact.html" class="ms-btn-secondary">Request Demo</a>
+            </div>
+          </div>
+
+          <div class="slide-visual-wrapper">
+            <div class="slide-photo-frame">
+              <img src="assets/images/slide-ai-copilot.jpg" alt="Stuzen AI Copilot & WhatsApp Automation Workflow" class="slide-photo-img" loading="lazy">
+              <div class="pillar-floating-pill">
+                <span class="pill-dot"></span>
+                <span>💬 24/7 Autonomous Lead Bot &amp; CRM Sync</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Soft Mint Sage Pastel Background (Custom Software & Cloud ERP) -->
+      <div class="hero-slide slide-mint-sage">
+        <div class="container slide-grid">
+          <div class="slide-content">
+            <span class="badge-yellow">Custom Software</span>
+            <h1 class="slide-title">Bespoke Software Built Without Lock-in</h1>
+            <p class="slide-desc">
+              Scalable ERP systems, role-based customer portals, and microservice APIs engineered with 100% intellectual
+              property ownership.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="services.html#software" class="ms-btn-primary">Get started with Software</a>
+              <a href="discovery.html" class="ms-btn-secondary">Configure Scope</a>
+            </div>
+          </div>
+
+          <div class="slide-visual-wrapper">
+            <div class="slide-photo-frame">
+              <img src="assets/images/slide-bespoke-software.jpg" alt="Bespoke Software Architecture & Cloud ERP Engineering" class="slide-photo-img" loading="lazy">
+              <div class="pillar-floating-pill">
+                <span class="pill-dot"></span>
+                <span>🛡️ 100% IP Ownership &amp; Scalable APIs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Microsoft-Style Distributed Slider Controls (Matching Exact Reference) -->
+    <div class="ms-slider-controls-wrapper">
+      <div class="container ms-slider-controls-container">
+        <!-- Left: Circle Arrow Prev -->
+        <button class="ms-slider-arrow ms-arrow-prev" id="sliderPrevBtn" aria-label="Previous slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+
+        <!-- Center: Dash Indicators & Rounded Square Pause Button -->
+        <div class="ms-slider-center-group">
+          <div class="ms-slider-dashes" id="sliderIndicators">
+            <button class="ms-dash-indicator active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="ms-dash-indicator" data-slide="1" aria-label="Slide 2"></button>
+            <button class="ms-dash-indicator" data-slide="2" aria-label="Slide 3"></button>
+          </div>
+          <button class="ms-slider-playpause" id="sliderPlayPauseBtn" aria-label="Pause slide autoplay">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+              <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Right: Circle Arrow Next -->
+        <button class="ms-slider-arrow ms-arrow-next" id="sliderNextBtn" aria-label="Next slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       "For business" Section (Matching Screenshot 2)
+       ======================================================================== -->
+  <section class="for-business-section">
+    <div class="container">
+      <div class="for-business-header">
+        <h2 class="for-business-title">For business</h2>
+      </div>
+
+      <div class="for-business-grid">
+        <!-- Card 1 -->
+        <div class="ms-business-card">
+          <div class="ms-card-graphic" style="background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);">
+            <div style="display:flex; gap:12px; align-items:center;">
+              <div
+                style="width:110px; height:75px; background:#1e293b; border-radius:6px; border:2px solid #94a3b8; display:flex; align-items:center; justify-content:center;">
+                <span style="font-size:0.65rem; color:#38bdf8; font-weight:700;">STUZEN PRO</span>
+              </div>
+              <div
+                style="width:85px; height:95px; background:#0f172a; border-radius:8px; border:2px solid #cbd5e1; display:flex; align-items:center; justify-content:center;">
+                <span style="font-size:0.6rem; color:#e2e8f0;">TABLET UI</span>
+              </div>
+            </div>
+          </div>
+          <div class="ms-card-content">
+            <h3 class="ms-card-heading">New Web Platforms for Business are here</h3>
+            <p class="ms-card-text">
+              Fast performance for demanding enterprise workloads, sub-second load times, and built-in technical SEO
+              optimization.
+            </p>
+            <div class="ms-card-action">
+              <a href="services.html#web" class="ms-btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="ms-business-card">
+          <div class="ms-card-graphic" style="background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);">
+            <div
+              style="width:180px; height:120px; background:#ffffff; border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,0.06); padding:8px; border:1px solid #f0abfc;">
+              <div style="font-size:0.65rem; color:#a855f7; font-weight:700; margin-bottom:4px;">Stuzen Copilot</div>
+              <div style="height:6px; width:75%; background:#e9d5ff; border-radius:2px; margin-bottom:6px;"></div>
+              <div style="background:#f5f3ff; border-radius:4px; padding:4px; font-size:0.6rem; color:#6b21a8;">
+                AI Lead Assistant Active
+              </div>
+            </div>
+          </div>
+          <div class="ms-card-content">
+            <h3 class="ms-card-heading">Stuzen Copilot & AI Automation</h3>
+            <p class="ms-card-text">
+              Save time and focus on the things that matter most with autonomous AI agents, WhatsApp lead routing, and
+              CRM sync.
+            </p>
+            <div class="ms-card-action">
+              <a href="services.html#ai" class="ms-btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="ms-business-card">
+          <div class="ms-card-graphic"
+            style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #fef3c7 100%);">
+            <div
+              style="width:170px; height:110px; background:linear-gradient(45deg, #3b82f6 0%, #ec4899 50%, #f59e0b 100%); border-radius:12px; filter:blur(1px); opacity:0.85; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 20px rgba(59,130,246,0.3);">
+              <span
+                style="color:#ffffff; font-weight:800; font-size:0.85rem; letter-spacing:0.05em; text-shadow:0 2px 4px rgba(0,0,0,0.3);">INNOVATION</span>
+            </div>
+          </div>
+          <div class="ms-card-content">
+            <h3 class="ms-card-heading">Limitless innovation</h3>
+            <p class="ms-card-text">
+              Design, build and operationalise resilient systems that learn, scale and adapt with automated multi-cloud
+              pipelines.
+            </p>
+            <div class="ms-card-action">
+              <a href="services.html#software" class="ms-btn-primary">Get started with Stuzen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="ms-business-card">
+          <div class="ms-card-graphic" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);">
+            <div
+              style="width:180px; height:120px; background:#ffffff; border-radius:8px; border:1px solid #bbf7d0; padding:6px; box-shadow:0 4px 14px rgba(0,0,0,0.06); display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+              <div
+                style="background:#e2e8f0; border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:0.6rem; color:#475569;">
+                Tech Lead</div>
+              <div
+                style="background:#e2e8f0; border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:0.6rem; color:#475569;">
+                Architect</div>
+              <div
+                style="background:#e2e8f0; border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:0.6rem; color:#475569;">
+                AI Eng.</div>
+              <div
+                style="background:#bfdbfe; border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:0.6rem; color:#1e40af; font-weight:700;">
+                Live Call</div>
+            </div>
+          </div>
+          <div class="ms-card-content">
+            <h3 class="ms-card-heading">Custom ERP & CRM for your business</h3>
+            <p class="ms-card-text">
+              Centralized customer data, role-based staff permissions, automated recurring billing, and real-time
+              operational reports.
+            </p>
+            <div class="ms-card-action">
+              <a href="discovery.html" class="ms-btn-primary">Find the right plan</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Core Pillars / Services Section
+       ======================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>What We Excel At</span>
+        </div>
+        <h2 class="section-title">End-to-End Digital Solutions Tailored to Scale</h2>
+        <p class="section-desc">
+          We build with precision, clean code, and zero technical debt. Choose from our specialized engineering
+          disciplines:
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Website Development -->
+        <div class="card service-card-featured">
+          <span class="badge-featured">Flagship</span>
+          <div class="card-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Website Development</h3>
+          <p class="card-text">
+            Bespoke corporate websites, high-converting landing pages, interactive portals, and modern web applications
+            with sub-second page speeds.
+          </p>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Jamstack, HTML5/CSS3 & Modern JavaScript</span>
+            </li>
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100% Mobile Responsive & Cross-Browser</span>
+            </li>
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Technical SEO & Conversion Optimization</span>
+            </li>
+          </ul>
+          <a href="services.html#web" class="btn btn-outline btn-sm">Learn More →</a>
+        </div>
+
+        <!-- Service 2: Custom Software -->
+        <div class="card">
+          <div class="card-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="card-title">Custom Software Engineering</h3>
+          <p class="card-text">
+            Architecting robust enterprise ERP systems, internal management tools, SaaS platforms, and secure APIs
+            designed to grow with your business.
+          </p>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Microservices & REST / GraphQL APIs</span>
+            </li>
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Role-Based Access & Admin Dashboards</span>
+            </li>
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>High-Concurrency Relational & NoSQL DBs</span>
+            </li>
+          </ul>
+          <a href="services.html#software" class="btn btn-outline btn-sm">Learn More →</a>
+        </div>
+
+        <!-- Service 3: AI & Automation -->
+        <div class="card">
+          <div class="card-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+              <path d="M12 12L2.1 12.05"></path>
+              <path d="M12 12l6.8-7.2"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">AI & Intelligent Automation</h3>
+          <p class="card-text">
+            Automating redundant operations through AI agents, WhatsApp Business bot integrations, CRM synchronizations,
+            and data intelligence pipelines.
+          </p>
+          <ul class="card-list">
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>WhatsApp Business API Lead Bots</span>
+            </li>
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Automated CRM, Billing & Sheets Sync</span>
+            </li>
+            <li class="card-list-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Agentic AI Workflows & LLM Integrations</span>
+            </li>
+          </ul>
+          <a href="services.html#ai" class="btn btn-outline btn-sm">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       The Stuzen Methodology
+       ======================================================================== -->
+  <section class="section" style="background: var(--bg-surface-2);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>How We Work</span>
+        </div>
+        <h2 class="section-title">The "Learn. Build. Innovate." Philosophy</h2>
+        <p class="section-desc">
+          We don't guess. We systematically discover, engineer, and refine your platform for maximum longevity.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step-card">
+          <div class="step-num">01</div>
+          <h4 style="margin-bottom: 0.5rem;">Discovery & Learn</h4>
+          <p style="font-size: 0.95rem;">
+            Deep-dive into your operational requirements using our 45-point discovery questionnaire to uncover goals,
+            audience, and integrations.
+          </p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num">02</div>
+          <h4 style="margin-bottom: 0.5rem;">Architecture & Design</h4>
+          <p style="font-size: 0.95rem;">
+            Crafting user flows, wireframes, and scalable schema models before writing a single line of code.
+          </p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num">03</div>
+          <h4 style="margin-bottom: 0.5rem;">Precision Build</h4>
+          <p style="font-size: 0.95rem;">
+            Developing high-speed code with strict QA benchmarks, cross-device testing, and clean modular structure.
+          </p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num">04</div>
+          <h4 style="margin-bottom: 0.5rem;">Innovate & Scale</h4>
+          <p style="font-size: 0.95rem;">
+            Deployment to production, automated CI/CD monitoring, WhatsApp lead routing, and continuous enhancement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Requirements Discovery CTA Banner
+       ======================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="card cta-card-banner">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;" class="cta-inner-grid">
+          <div>
+            <div class="section-badge cta-badge">
+              <span class="dot"></span>
+              <span>Interactive Discovery Form</span>
+            </div>
+            <h2 class="cta-title">Ready to Clarify Your Project Scope?</h2>
+            <p class="cta-desc">
+              Use our official 10-step digital Client Discovery Questionnaire. Choose features, specify WhatsApp
+              automations, pick design preferences, and receive an instant investment & turnaround estimate.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="discovery.html" class="btn btn-primary btn-lg btn-glow">
+                <span>Start Interactive Questionnaire</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="contact.html" class="btn btn-secondary btn-lg cta-btn-secondary">
+                <span>Book a Discovery Call</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Featured Case Studies Preview
+       ======================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Proven Results</span>
+        </div>
+        <h2 class="section-title">Featured Solutions We Engineered</h2>
+        <p class="section-desc">Real-world impact delivered across modern web apps, SaaS platforms, and automation
+          tools.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-preview">
+            <span class="project-category-badge">Web Platform</span>
+            <img src="assets/images/portfolio/apex-logistics.svg" alt="Apex Logistics Global Platform Preview" class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Apex Logistics Global</h3>
+            <p class="project-desc">Real-time freight quotation engine and tracking dashboard with instant customer
+              WhatsApp status updates.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              <span>+320% Online Inquiries in 60 Days</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">HTML5/CSS3</span>
+              <span class="project-tag">JS</span>
+              <span class="project-tag">WhatsApp API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-preview">
+            <span class="project-category-badge">AI Automation</span>
+            <img src="assets/images/portfolio/healthsync-clinic.svg" alt="HealthSync Automated Clinic Preview" class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">HealthSync Automated Clinic</h3>
+            <p class="project-desc">Automated patient appointment booking portal with SMS/WhatsApp confirmation
+              workflows and CRM calendar sync.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              <span>75% Reduction in Admin Overhead</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Custom Software</span>
+              <span class="project-tag">AI Scheduler</span>
+              <span class="project-tag">Google Sheets Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-preview">
+            <span class="project-category-badge">Custom Software</span>
+            <img src="assets/images/portfolio/finpulse-analytics.svg" alt="FinPulse Analytics Suite Preview" class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">FinPulse Analytics Suite</h3>
+            <p class="project-desc">Enterprise SaaS dashboard tracking operational revenue, billing automation, and
+              invoice generation.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>99.99% Guaranteed Cloud Uptime</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">SaaS Architecture</span>
+              <span class="project-tag">Secure Auth</span>
+              <span class="project-tag">Billing Gateway</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="portfolio.html" class="btn btn-secondary">
+          <span>View All Case Studies & Filter by Category →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Frequently Asked Questions
+       ======================================================================== -->
+  <section class="section" style="background: var(--bg-surface-2);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Got Questions?</span>
+        </div>
+        <h2 class="section-title">Answers to Common Inquiries</h2>
+        <p class="section-desc">Everything you need to know about partnering with Stuzen Technologies.</p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item open">
+          <button class="faq-question" type="button" aria-expanded="true">
+            <span>What makes Stuzen Technologies different from traditional web agencies?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We combine deep software engineering rigor with artificial intelligence and workflow automation. Rather
+              than delivering simple static templates, we build high-speed digital engines with WhatsApp lead routing,
+              automated CRM sync, and clean, unbloated code.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How does the Requirements Discovery Questionnaire work?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Our Discovery Form covers 10 structured sections (goals, page structure, design direction, WhatsApp
+              features, payment gateways, budget & timeline). Once completed, it generates an instant estimate and
+              outputs a clean project brief that can be saved as PDF or sent directly to our engineering leads via
+              WhatsApp.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Do I own 100% of the code and intellectual property?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes, absolutely. Upon final project settlement and delivery, all source code, assets, repository access,
+              and credentials are completely transferred to you with zero vendor lock-in.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>What post-launch support and maintenance do you offer?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We provide 30 days of complimentary post-launch support and bug fixes with every build. Following that, we
+              offer monthly retainer maintenance plans for security updates, performance monitoring, and on-demand
+              feature iterations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Global Floating Widgets & Chat Assistant
+       ======================================================================== -->
+  <div class="floating-actions-container">
+    <!-- WhatsApp Direct Chat Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20Stuzen%20Technologies,%20I'm%20interested%20in%20discussing%20a%20project."
+      target="_blank" class="whatsapp-float-btn" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-pulse"></span>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043s.433-.505.549-.679c.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z">
+        </path>
+      </svg>
+    </a>
+
+    <!-- Stuzen AI Interactive Assistant Button -->
+    <button class="ai-assistant-float-btn" aria-label="Open Stuzen AI Assistant">
+      <img src="assets/images/stuzen-icon.png" alt="Stuzen AI Assistant">
+    </button>
+  </div>
+
+  <!-- Stuzen AI Interactive Chat Window -->
+  <div class="ai-chat-window">
+    <div class="ai-chat-header">
+      <div class="ai-header-info">
+        <div class="ai-avatar">
+          <img src="assets/images/stuzen-icon.png" alt="Stuzen Assistant">
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; line-height: 1.2;">Stuzen AI Engineer</h4>
+          <span style="font-size: 0.75rem; color: var(--color-accent-emerald);">● Online & Ready</span>
+        </div>
+      </div>
+      <button class="ai-chat-close" style="color: var(--text-muted); font-size: 1.3rem;">✕</button>
+    </div>
+
+    <div class="ai-chat-body">
+      <div class="chat-bubble bot">
+        Hello! I'm the Stuzen AI assistant. How can I help you architect your next website, custom software, or AI
+        automation project today?
+      </div>
+    </div>
+
+    <div class="chat-quick-actions">
+      <button class="chat-quick-btn" data-query="What are your core services?">Services</button>
+      <button class="chat-quick-btn" data-query="What is the price and cost estimate?">Pricing</button>
+      <button class="chat-quick-btn" data-query="How does the discovery form questionnaire work?">Discovery
+        Form</button>
+      <button class="chat-quick-btn" data-query="How do I contact your engineering team?">Contact Info</button>
+    </div>
+
+    <div class="ai-chat-input-row">
+      <input type="text" class="ai-chat-input" placeholder="Ask about services, tech stack, pricing...">
+      <button class="ai-chat-send" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Site Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-link" aria-label="Stuzen Technologies Home">
+            <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies - Learn. Build. Innovate."
+              class="brand-logo-img">
+          </a>
+          <p class="footer-desc">
+            Website Development | Custom Software | AI & Automation. Building scalable, resilient digital infrastructure
+            for global businesses.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio & Case Studies</a></li>
+            <li><a href="discovery.html" class="footer-link">Discovery Wizard</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#web" class="footer-link">Corporate Websites</a></li>
+            <li><a href="services.html#software" class="footer-link">Custom ERP & CRM</a></li>
+            <li><a href="services.html#ai" class="footer-link">WhatsApp Bot Automation</a></li>
+            <li><a href="services.html#ecommerce" class="footer-link">E-Commerce & Gateways</a></li>
+            <li><a href="services.html#cloud" class="footer-link">Cloud DevOps & CI/CD</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Stay Connected</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            Subscribe for engineering insights, tech trends, and platform updates.
+          </p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); showToast('Subscribed to Stuzen Tech Dispatch!'); this.reset();">
+            <input type="email" required placeholder="Enter your email" class="newsletter-input">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 STUZEN TECHNOLOGIES. All rights reserved. Learn. Build. Innovate.</p>
+        <div class="footer-bottom-links">
+          <a href="discovery.html" class="footer-link">Discovery Form</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <!-- Store / Engineering Assistant Popover Dialogue (Matching Screenshot 2) -->
+  <div class="ms-chat-popover" id="msChatPopover">
+    <div class="popover-title">Can we help you?</div>
+    <div class="popover-desc">Stuzen Assistant is available 24/7.</div>
+    <div class="popover-actions">
+      <button class="popover-chat-btn" id="popoverChatBtn">Chat now</button>
+      <button class="popover-dismiss-btn" id="popoverDismissBtn">No thanks</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066f5" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="laptopBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#070d1e"/>
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0066f5"/>
+    </linearGradient>
+    <linearGradient id="chartBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glowDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0066f5" flood-opacity="0.25"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Aura -->
+  <circle cx="340" cy="200" r="180" fill="url(#bgGlow1)" filter="blur(40px)"/>
+
+  <!-- Background Decorative Tech Grid Lines -->
+  <g opacity="0.15" stroke="#0066f5" stroke-width="1">
+    <line x1="80" y1="40" x2="520" y2="40"/>
+    <line x1="80" y1="120" x2="520" y2="120"/>
+    <line x1="80" y1="200" x2="520" y2="200"/>
+    <line x1="80" y1="280" x2="520" y2="280"/>
+    <line x1="80" y1="360" x2="520" y2="360"/>
+    <line x1="120" y1="40" x2="120" y2="380"/>
+    <line x1="260" y1="40" x2="260" y2="380"/>
+    <line x1="400" y1="40" x2="400" y2="380"/>
+  </g>
+
+  <!-- Main Laptop Device -->
+  <g filter="url(#glowDrop)" transform="translate(60, 45)">
+    <!-- Screen Outer Shell -->
+    <rect x="50" y="30" width="380" height="235" rx="14" fill="url(#laptopBody)" stroke="#475569" stroke-width="2"/>
+    <!-- Screen Glass Display -->
+    <rect x="62" y="42" width="356" height="211" rx="8" fill="url(#screenGrad)"/>
+    
+    <!-- Browser/IDE Window Header -->
+    <rect x="62" y="42" width="356" height="28" rx="8" fill="#131e38"/>
+    <circle cx="80" cy="56" r="4" fill="#ff5f56"/>
+    <circle cx="94" cy="56" r="4" fill="#ffbd2e"/>
+    <circle cx="108" cy="56" r="4" fill="#27c93f"/>
+    <rect x="130" y="49" width="180" height="14" rx="4" fill="#1e293b"/>
+    <text x="140" y="60" fill="#64748b" font-family="monospace" font-size="9">stuzen-cloud.io/v8-engine</text>
+
+    <!-- Code & Tech UI Inside Laptop -->
+    <g transform="translate(76, 85)">
+      <!-- Code lines -->
+      <text x="0" y="12" fill="#38bdf8" font-family="monospace" font-size="10">&lt;Stuzen.Engine architecture="Jamstack" /&gt;</text>
+      <text x="0" y="28" fill="#a78bfa" font-family="monospace" font-size="9">const v8 = new PerformanceEngine({</text>
+      <text x="14" y="42" fill="#34d399" font-family="monospace" font-size="9">coreWebVitals: 99.8,</text>
+      <text x="14" y="56" fill="#fbbf24" font-family="monospace" font-size="9">ssr: true, cache: 'edge'</text>
+      <text x="0" y="70" fill="#a78bfa" font-family="monospace" font-size="9">});</text>
+
+      <!-- Mini Analytics Chart on Screen -->
+      <g transform="translate(185, 5)">
+        <rect x="0" y="0" width="135" height="75" rx="6" fill="#131f3b" stroke="#1e293b"/>
+        <text x="10" y="16" fill="#94a3b8" font-family="sans-serif" font-size="8" font-weight="bold">VELOCITY METRICS</text>
+        <rect x="12" y="42" width="14" height="24" rx="2" fill="url(#chartBar)"/>
+        <rect x="34" y="32" width="14" height="34" rx="2" fill="url(#chartBar)"/>
+        <rect x="56" y="24" width="14" height="42" rx="2" fill="url(#chartBar)"/>
+        <rect x="78" y="18" width="14" height="48" rx="2" fill="url(#cyanBlue)"/>
+        <rect x="100" y="12" width="14" height="54" rx="2" fill="url(#cyanBlue)"/>
+      </g>
+    </g>
+
+    <!-- Laptop Base / Hinge -->
+    <path d="M 20 265 L 460 265 L 435 278 L 45 278 Z" fill="#334155" stroke="#1e293b"/>
+    <rect x="200" y="265" width="80" height="4" rx="2" fill="#64748b"/>
+  </g>
+
+  <!-- Angled Mobile Device / Tablet on the Side -->
+  <g filter="url(#softShadow)" transform="translate(370, 110)">
+    <rect x="0" y="0" width="150" height="235" rx="18" fill="#0f172a" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="8" y="8" width="134" height="219" rx="12" fill="#090e1a"/>
+    <rect x="50" y="14" width="50" height="4" rx="2" fill="#334155"/>
+    
+    <!-- Mobile App Wireframe on Tablet -->
+    <rect x="18" y="32" width="114" height="42" rx="6" fill="url(#cyanBlue)"/>
+    <text x="26" y="52" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="bold">STUZEN WEB</text>
+    <text x="26" y="64" fill="rgba(255,255,255,0.85)" font-family="sans-serif" font-size="7">Mobile Ready 100%</text>
+
+    <!-- Mobile Cards -->
+    <rect x="18" y="84" width="114" height="32" rx="4" fill="#1e293b"/>
+    <circle cx="32" cy="100" r="6" fill="#38bdf8"/>
+    <rect x="46" y="94" width="65" height="5" rx="2" fill="#64748b"/>
+    <rect x="46" y="103" width="45" height="4" rx="2" fill="#475569"/>
+
+    <rect x="18" y="124" width="114" height="32" rx="4" fill="#1e293b"/>
+    <circle cx="32" cy="140" r="6" fill="#34d399"/>
+    <rect x="46" y="134" width="65" height="5" rx="2" fill="#64748b"/>
+    <rect x="46" y="143" width="45" height="4" rx="2" fill="#475569"/>
+
+    <rect x="18" y="164" width="114" height="32" rx="4" fill="#1e293b"/>
+    <circle cx="32" cy="180" r="6" fill="#f59e0b"/>
+    <rect x="46" y="174" width="65" height="5" rx="2" fill="#64748b"/>
+  </g>
+
+  <!-- Floating Holographic Badge 1 (Lighthouse 99.8) -->
+  <g filter="url(#softShadow)" transform="translate(45, 175)">
+    <rect x="0" y="0" width="145" height="48" rx="10" fill="rgba(255, 255, 255, 0.95)" stroke="#00f0ff" stroke-width="1.5"/>
+    <circle cx="24" cy="24" r="10" fill="#10b981"/>
+    <text x="20" y="28" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">✓</text>
+    <text x="42" y="20" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">LIGHTHOUSE</text>
+    <text x="42" y="34" fill="#059669" font-family="sans-serif" font-size="12" font-weight="800">99.8 SCORE</text>
+  </g>
+
+  <!-- Floating Holographic Badge 2 (Conversion) -->
+  <g filter="url(#softShadow)" transform="translate(180, 310)">
+    <rect x="0" y="0" width="155" height="44" rx="8" fill="rgba(15, 23, 42, 0.92)" stroke="#38bdf8" stroke-width="1"/>
+    <text x="14" y="20" fill="#94a3b8" font-family="sans-serif" font-size="9">LEAD CONVERSION</text>
+    <text x="14" y="34" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold">▲ +340% INQUIRIES</text>
+  </g>
+</svg>

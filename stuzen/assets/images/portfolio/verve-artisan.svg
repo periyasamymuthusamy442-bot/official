@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="verveBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141118"/>
+      <stop offset="50%" stop-color="#1c1624"/>
+      <stop offset="100%" stop-color="#0f0d14"/>
+    </linearGradient>
+    <linearGradient id="goldCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="verveCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241d2f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#181320" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="verveGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#f59e0b" flood-opacity="0.25"/>
+    </filter>
+    <filter id="cartShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#verveBg)"/>
+
+  <!-- Tech Grid Background -->
+  <g opacity="0.08" stroke="#f59e0b" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="500" y1="0" x2="500" y2="360"/>
+  </g>
+
+  <!-- Ambient Amber & Coral Glow -->
+  <circle cx="160" cy="90" r="130" fill="#f59e0b" opacity="0.14" filter="blur(50px)"/>
+  <circle cx="460" cy="250" r="140" fill="#f43f5e" opacity="0.12" filter="blur(48px)"/>
+
+  <!-- Browser Window Chrome -->
+  <g transform="translate(30, 24)" filter="url(#verveGlow)">
+    <rect width="540" height="312" rx="12" fill="#15121c" stroke="#2c223a" stroke-width="1.5"/>
+    <!-- Window Header -->
+    <rect width="540" height="32" rx="12" fill="#1e1828"/>
+    <rect y="20" width="540" height="12" fill="#1e1828"/>
+    <!-- Controls -->
+    <circle cx="20" cy="16" r="4.5" fill="#ff5f56"/>
+    <circle cx="34" cy="16" r="4.5" fill="#ffbd2e"/>
+    <circle cx="48" cy="16" r="4.5" fill="#27c93f"/>
+    <!-- URL Pill -->
+    <rect x="80" y="8" width="260" height="16" rx="4" fill="#0d0b12"/>
+    <text x="92" y="19.5" fill="#fcd34d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500">https://verve-artisan.store/checkout</text>
+
+    <!-- Status badge right -->
+    <rect x="420" y="7" width="105" height="18" rx="9" fill="rgba(245, 158, 11, 0.15)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1"/>
+    <circle cx="432" cy="16" r="3" fill="#f59e0b"/>
+    <text x="441" y="19" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.5">1-STEP CHECKOUT</text>
+  </g>
+
+  <!-- Inner E-Commerce Layout -->
+  <g transform="translate(45, 68)">
+    <!-- Left Column: Featured Artisan Product Card (width: 285) -->
+    <g>
+      <rect width="285" height="252" rx="8" fill="url(#verveCard)" stroke="#322442" stroke-width="1"/>
+      
+      <!-- Product Image Area -->
+      <g transform="translate(14, 14)">
+        <rect width="257" height="115" rx="6" fill="#120e17" stroke="#251a32" stroke-width="1"/>
+        
+        <!-- Elegant Handcrafted Ceramic Vessel / Art Illustration -->
+        <g transform="translate(128, 58)">
+          <!-- Warm Spotlight Aura -->
+          <circle cx="0" cy="0" r="42" fill="#f59e0b" opacity="0.2" filter="blur(16px)"/>
+          
+          <!-- Vase Silhouette -->
+          <path d="M -16 -35 Q 0 -38 16 -35 Q 24 -15 28 8 Q 30 28 18 36 Q 0 40 -18 36 Q -30 28 -28 8 Q -24 -15 -16 -35 Z" fill="url(#goldCoral)"/>
+          <ellipse cx="0" cy="-35" rx="16" ry="4" fill="#fef3c7"/>
+          <!-- Shimmer highlight -->
+          <path d="M -8 -25 Q -14 0 -12 20" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </g>
+
+        <!-- Product Badges -->
+        <rect x="10" y="10" width="76" height="16" rx="4" fill="rgba(245, 158, 11, 0.25)"/>
+        <text x="48" y="21.5" text-anchor="middle" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">LIMITED EDITION</text>
+      </g>
+
+      <!-- Product Title & Details -->
+      <g transform="translate(16, 142)">
+        <text x="0" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800">Handcrafted Minimalist Vessel</text>
+        <text x="0" y="28" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5">Matte Obsidian Stoneware • Studio Edition 2026</text>
+        
+        <text x="0" y="44" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9">★★★★★ <tspan fill="#71717a">(4.9 • 184 reviews)</tspan></text>
+
+        <!-- Price & Instant Buy Bar -->
+        <text x="0" y="78" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900">$129.00 <tspan fill="#71717a" font-size="10" text-decoration="line-through">$180.00</tspan></text>
+
+        <!-- Buy button -->
+        <rect x="155" y="58" width="98" height="28" rx="6" fill="url(#goldCoral)"/>
+        <text x="204" y="75.5" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700">Instant Buy →</text>
+      </g>
+    </g>
+
+    <!-- Right Column: 1-Step Checkout & Abandoned Cart Recovery (width: 210) -->
+    <g transform="translate(300, 0)">
+      <!-- Checkout Drawer Widget -->
+      <rect width="210" height="135" rx="8" fill="url(#verveCard)" stroke="#322442" stroke-width="1"/>
+      
+      <text x="14" y="22" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700">⚡ 1-Step Express Checkout</text>
+
+      <!-- Payment Gateways Options -->
+      <g transform="translate(14, 34)">
+        <rect width="86" height="26" rx="4" fill="#130e1a" stroke="#4c1d95" stroke-width="1"/>
+        <text x="43" y="50" text-anchor="middle" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700"> Apple Pay</text>
+
+        <rect x="96" width="86" height="26" rx="4" fill="#130e1a" stroke="#0284c7" stroke-width="1"/>
+        <text x="139" y="50" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">Razorpay / Stripe</text>
+      </g>
+
+      <!-- Conversion Metric Banner -->
+      <g transform="translate(14, 70)">
+        <rect width="182" height="52" rx="6" fill="#1a1424" stroke="#f59e0b" stroke-width="1"/>
+        <text x="10" y="20" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800">🚀 4.2x Faster Conversion</text>
+        <text x="10" y="34" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Frictionless 0.8s mobile checkout</text>
+        <text x="10" y="44" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">● 99.8% Payment Success Rate</text>
+      </g>
+
+      <!-- WhatsApp Cart Recovery Alert -->
+      <g transform="translate(0, 145)" filter="url(#cartShadow)">
+        <rect width="210" height="107" rx="8" fill="#0d211a" stroke="#10b981" stroke-width="1.2"/>
+        
+        <!-- Header -->
+        <rect width="210" height="24" rx="8" fill="#059669"/>
+        <rect y="12" width="210" height="12" fill="#059669"/>
+        
+        <circle cx="16" cy="12" r="6" fill="#ffffff"/>
+        <text x="16" y="15" text-anchor="middle" fill="#059669" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="900">💬</text>
+        <text x="28" y="15" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">WhatsApp Abandoned Cart Alert</text>
+
+        <!-- Message Body -->
+        <text x="12" y="42" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">Your bag is reserved! 🛍️</text>
+        <text x="12" y="56" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">"Minimalist Vessel" is selling fast.</text>
+        <text x="12" y="68" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Use code <tspan fill="#fde68a" font-weight="bold">VERVE10</tspan> for 10% off!</text>
+
+        <rect x="12" y="78" width="186" height="20" rx="4" fill="#10b981"/>
+        <text x="105" y="91.5" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="800">Resume Checkout (1-Click) →</text>
+      </g>
+    </g>
+  </g>
+</svg>

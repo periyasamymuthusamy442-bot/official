@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="finBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="purpleCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="finCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161f36" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="finGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#6366f1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#finBg)"/>
+
+  <!-- Tech Grid Background -->
+  <g opacity="0.1" stroke="#6366f1" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="500" y1="0" x2="500" y2="360"/>
+  </g>
+
+  <!-- Ambient Glow Auras -->
+  <circle cx="200" cy="90" r="140" fill="#6366f1" opacity="0.18" filter="blur(50px)"/>
+  <circle cx="460" cy="240" r="130" fill="#00f0ff" opacity="0.15" filter="blur(45px)"/>
+
+  <!-- Browser Window Chrome -->
+  <g transform="translate(30, 24)" filter="url(#finGlow)">
+    <rect width="540" height="312" rx="12" fill="#0d1424" stroke="#1f2c4c" stroke-width="1.5"/>
+    <!-- Window Header -->
+    <rect width="540" height="32" rx="12" fill="#131c33"/>
+    <rect y="20" width="540" height="12" fill="#131c33"/>
+    <!-- Controls -->
+    <circle cx="20" cy="16" r="4.5" fill="#ff5f56"/>
+    <circle cx="34" cy="16" r="4.5" fill="#ffbd2e"/>
+    <circle cx="48" cy="16" r="4.5" fill="#27c93f"/>
+    <!-- URL Pill -->
+    <rect x="80" y="8" width="265" height="16" rx="4" fill="#090f1d"/>
+    <text x="92" y="19.5" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500">https://app.finpulse.io/analytics-suite</text>
+
+    <!-- Status badge right -->
+    <rect x="420" y="7" width="105" height="18" rx="9" fill="rgba(0, 240, 255, 0.12)" stroke="rgba(0, 240, 255, 0.4)" stroke-width="1"/>
+    <circle cx="432" cy="16" r="3" fill="#00f0ff"/>
+    <text x="441" y="19" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.5">99.99% UPTIME</text>
+  </g>
+
+  <!-- Inner Dashboard Layout -->
+  <g transform="translate(45, 68)">
+    <!-- Top 3 Metric Cards Row -->
+    <g>
+      <!-- Metric Card 1: MRR -->
+      <rect width="160" height="66" rx="8" fill="url(#finCard)" stroke="#1e2c4f" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" text-transform="uppercase">Recurring Revenue</text>
+      <text x="14" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900">$184,250</text>
+      <rect x="14" y="48" width="56" height="12" rx="3" fill="rgba(34, 197, 94, 0.2)"/>
+      <text x="42" y="57" text-anchor="middle" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">+24.8% ↑</text>
+
+      <!-- Metric Card 2: Uptime & Cloud Ops -->
+      <g transform="translate(175, 0)">
+        <rect width="160" height="66" rx="8" fill="url(#finCard)" stroke="#1e2c4f" stroke-width="1"/>
+        <text x="14" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" text-transform="uppercase">Reconciliation</text>
+        <text x="14" y="42" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900">99.4%</text>
+        <rect x="14" y="48" width="75" height="12" rx="3" fill="rgba(56, 189, 248, 0.2)"/>
+        <text x="51.5" y="57" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">100% AUTOMATED</text>
+      </g>
+
+      <!-- Metric Card 3: Invoices Dispatched -->
+      <g transform="translate(350, 0)">
+        <rect width="160" height="66" rx="8" fill="url(#finCard)" stroke="#1e2c4f" stroke-width="1"/>
+        <text x="14" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" text-transform="uppercase">Stripe Webhooks</text>
+        <text x="14" y="42" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900">4,892 Synced</text>
+        <rect x="14" y="48" width="70" height="12" rx="3" fill="rgba(167, 139, 250, 0.2)"/>
+        <text x="49" y="57" text-anchor="middle" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700">ZERO LATENCY</text>
+      </g>
+    </g>
+
+    <!-- Main Chart & Invoice Ledger (Bottom Section) -->
+    <g transform="translate(0, 76)">
+      <!-- Left Chart Area (width: 310) -->
+      <rect width="310" height="175" rx="8" fill="url(#finCard)" stroke="#1e2c4f" stroke-width="1"/>
+      <text x="16" y="22" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-transform="uppercase" letter-spacing="0.5">Financial Growth &amp; Ledger Velocity</text>
+      
+      <!-- Chart Area Grid Lines -->
+      <line x1="20" y1="50" x2="295" y2="50" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="20" y1="85" x2="295" y2="85" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="20" y1="120" x2="295" y2="120" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="20" y1="155" x2="295" y2="155" stroke="#1e293b"/>
+
+      <!-- Spline Area Fill -->
+      <path d="M 20 135 Q 60 120 100 110 T 170 85 T 230 65 T 295 40 L 295 155 L 20 155 Z" fill="url(#chartGradient)"/>
+
+      <!-- Spline Glowing Stroke Line -->
+      <path d="M 20 135 Q 60 120 100 110 T 170 85 T 230 65 T 295 40" fill="none" stroke="url(#purpleCyan)" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Active Point Dot with Pulse -->
+      <circle cx="230" cy="65" r="5" fill="#00f0ff" stroke="#ffffff" stroke-width="2"/>
+      
+      <!-- Tooltip Box -->
+      <g transform="translate(180, 20)">
+        <rect width="95" height="26" rx="5" fill="#0c172e" stroke="#00f0ff" stroke-width="1"/>
+        <text x="47.5" y="16.5" text-anchor="middle" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="800">$184.2K MRR</text>
+      </g>
+
+      <!-- Month Labels -->
+      <text x="25" y="168" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Jun</text>
+      <text x="90" y="168" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Jul</text>
+      <text x="160" y="168" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Aug</text>
+      <text x="220" y="168" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Sep</text>
+      <text x="280" y="168" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8">Oct</text>
+    </g>
+
+    <!-- Right Live Reconciliation Table (width: 185) -->
+    <g transform="translate(325, 76)">
+      <rect width="185" height="175" rx="8" fill="url(#finCard)" stroke="#1e2c4f" stroke-width="1"/>
+      <text x="12" y="22" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" text-transform="uppercase" letter-spacing="0.5">Automated Invoicing</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(10, 34)">
+        <rect width="165" height="38" rx="5" fill="#0b1324" stroke="#192848" stroke-width="1"/>
+        <text x="10" y="16" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">Stripe Hook #8902</text>
+        <text x="10" y="28" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Enterprise Plan Sync</text>
+        <text x="155" y="16" text-anchor="end" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="800">$4,850</text>
+        <rect x="115" y="20" width="40" height="13" rx="3" fill="rgba(34, 197, 94, 0.2)"/>
+        <text x="135" y="29.5" text-anchor="middle" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="800">PAID</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(10, 78)">
+        <rect width="165" height="38" rx="5" fill="#0b1324" stroke="#192848" stroke-width="1"/>
+        <text x="10" y="16" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">Acme Retainer Q3</text>
+        <text x="10" y="28" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Recurring Direct Debit</text>
+        <text x="155" y="16" text-anchor="end" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="800">$12,400</text>
+        <rect x="105" y="20" width="50" height="13" rx="3" fill="rgba(0, 240, 255, 0.15)"/>
+        <text x="130" y="29.5" text-anchor="middle" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="800">SYNCED</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(10, 122)">
+        <rect width="165" height="38" rx="5" fill="#0b1324" stroke="#192848" stroke-width="1"/>
+        <text x="10" y="16" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">FinTech Hub SaaS</text>
+        <text x="10" y="28" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5">Tier 3 Usage API</text>
+        <text x="155" y="16" text-anchor="end" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="800">$6,200</text>
+        <rect x="115" y="20" width="40" height="13" rx="3" fill="rgba(34, 197, 94, 0.2)"/>
+        <text x="135" y="29.5" text-anchor="middle" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="800">PAID</text>
+      </g>
+    </g>
+  </g>
+</svg>

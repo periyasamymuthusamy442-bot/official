@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Case Studies | STUZEN TECHNOLOGIES</title>
+  <meta name="description"
+    content="Explore Stuzen Technologies' portfolio of delivered projects: high-converting web applications, custom software platforms, and AI automation engines.">
+  <link rel="icon" type="image/png" href="assets/images/stuzen-icon.png">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="Stuzen Technologies Home">
+        <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies - Learn. Build. Innovate."
+          class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="discovery.html" class="nav-link">Discovery Wizard</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="discovery.html" class="btn btn-primary btn-sm btn-glow">Start Project</a>
+
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo-link">
+          <img src="assets/images/stuzen-logo.png" alt="Stuzen Technologies Logo" class="brand-logo-img">
+        </a>
+        <button class="drawer-close" aria-label="Close menu"
+          style="color: var(--text-muted); font-size: 1.5rem;">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="services.html" class="drawer-link">Our Services</a>
+        <a href="portfolio.html" class="drawer-link active">Portfolio & Case Studies</a>
+        <a href="discovery.html" class="drawer-link">Discovery Wizard</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+      </div>
+    </div>
+    <div class="drawer-footer">
+      <a href="discovery.html" class="btn btn-primary btn-block">Start Project Discovery</a>
+    </div>
+  </aside>
+
+  <!-- Hero Header -->
+  <section class="section" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Engineered Success</span>
+        </div>
+        <h1 class="section-title">Case Studies & Recent Work</h1>
+        <p class="section-desc">
+          Explore how we help global clients transform operations through tailored web platforms, custom enterprise
+          systems, and intelligent automation.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+        <button class="portfolio-filter-btn" data-filter="web">Web Applications</button>
+        <button class="portfolio-filter-btn" data-filter="software">Custom Software</button>
+        <button class="portfolio-filter-btn" data-filter="ai">AI & Automation</button>
+        <button class="portfolio-filter-btn" data-filter="ecom">E-Commerce</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioContainer">
+
+        <!-- Item 1: Web -->
+        <div class="project-card" data-category="web">
+          <div class="project-preview">
+            <span class="project-category-badge">Web Platform</span>
+            <img src="assets/images/portfolio/apex-logistics.svg" alt="Apex Logistics Global Platform Preview"
+              class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Apex Logistics Global</h3>
+            <p class="project-desc">Real-time freight rate calculator and container tracking dashboard with automated
+              client WhatsApp notification alerts.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              <span>+320% Online Inquiries in 60 Days</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">HTML5/CSS3</span>
+              <span class="project-tag">ES6+ JavaScript</span>
+              <span class="project-tag">WhatsApp API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: AI & Automation -->
+        <div class="project-card" data-category="ai">
+          <div class="project-preview">
+            <span class="project-category-badge">AI Automation</span>
+            <img src="assets/images/portfolio/healthsync-clinic.svg" alt="HealthSync Clinic Portal Preview"
+              class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">HealthSync Clinic Portal</h3>
+            <p class="project-desc">Automated patient intake system with instant WhatsApp appointment reminders, doctor
+              calendar sync, and digital triage.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              <span>75% Reduction in Admin Overhead</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">AI Workflow</span>
+              <span class="project-tag">WhatsApp Cloud API</span>
+              <span class="project-tag">Google Sheets Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Custom Software -->
+        <div class="project-card" data-category="software">
+          <div class="project-preview">
+            <span class="project-category-badge">Custom Software</span>
+            <img src="assets/images/portfolio/finpulse-analytics.svg" alt="FinPulse Analytics Suite Preview"
+              class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">FinPulse Analytics Suite</h3>
+            <p class="project-desc">Custom financial reporting dashboard with role-based team management, automated
+              recurring invoices, and Stripe webhook reconciliation.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>99.99% Cloud Service Uptime</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">ERP Architecture</span>
+              <span class="project-tag">Stripe Gateway</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: E-Commerce -->
+        <div class="project-card" data-category="ecom">
+          <div class="project-preview">
+            <span class="project-category-badge">E-Commerce</span>
+            <img src="assets/images/portfolio/verve-artisan.svg" alt="Verve Artisan Store Preview"
+              class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Verve Artisan Store</h3>
+            <p class="project-desc">Direct-to-consumer store with optimized 1-step checkout, inventory notifications,
+              and abandoned cart WhatsApp recovery.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              <span>4.2x Faster Checkout Conversion</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">E-Commerce</span>
+              <span class="project-tag">Razorpay / Stripe</span>
+              <span class="project-tag">Speed Optimized</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Web -->
+        <div class="project-card" data-category="web">
+          <div class="project-preview">
+            <span class="project-category-badge">Corporate Web</span>
+            <img src="assets/images/portfolio/terra-capital.svg" alt="Terra Capital Ventures Preview"
+              class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Terra Capital Ventures</h3>
+            <p class="project-desc">High-trust venture capital portal featuring interactive portfolio matrices, LP
+              investor updates, and meeting scheduler.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              <span>99/100 Google Lighthouse Score</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Corporate Brand</span>
+              <span class="project-tag">Minimalist UI</span>
+              <span class="project-tag">Zero Bloat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: AI & Automation -->
+        <div class="project-card" data-category="ai">
+          <div class="project-preview">
+            <span class="project-category-badge">AI Automation</span>
+            <img src="assets/images/portfolio/autodispatch-field.svg" alt="AutoDispatch Field Service Preview"
+              class="project-preview-img" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AutoDispatch Field Service</h3>
+            <p class="project-desc">Automated technician dispatch system driven by AI lead categorization and direct
+              WhatsApp location verification.</p>
+            <div class="project-metric">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)"
+                stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>80% Faster First Response</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">AI Dispatch</span>
+              <span class="project-tag">WhatsApp Bot</span>
+              <span class="project-tag">Live Geo Tracking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section" style="background: var(--bg-surface-2);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Client Reviews</span>
+        </div>
+        <h2 class="section-title">What Founders & Leaders Say</h2>
+        <p class="section-desc">Real feedback from clients who transformed their operations with Stuzen Technologies.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Stuzen's 45-point Requirements Discovery Form made our project scope completely crystal clear from day
+              one. They delivered our logistics portal ahead of schedule, and the WhatsApp automation drove a 3x surge
+              in inquiries."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">RK</div>
+            <div>
+              <div class="client-name">Rajesh Kumar</div>
+              <div class="client-role">Managing Director, Apex Logistics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "We replaced an expensive, slow third-party SaaS with Stuzen's bespoke internal platform. It's blazing
+              fast, our clinic staff loves it, and we own 100% of our patient data with zero recurring license fees."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">SN</div>
+            <div>
+              <div class="client-name">Dr. Sarah Newman</div>
+              <div class="client-role">Founder, HealthSync Clinic</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Clean code, great communication, and absolute technical mastery. Their 'Learn. Build. Innovate.'
+              philosophy shows in every detail of our web app. Highly recommended!"
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">AM</div>
+            <div>
+              <div class="client-name">Arun Mohan</div>
+              <div class="client-role">VP Product, FinPulse</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align: center;">
+      <div class="card"
+        style="padding: 3.5rem 2rem; background: var(--grad-surface); border-color: var(--border-bright);">
+        <h2 style="margin-bottom: 1rem;">Ready to Build Your Case Study With Us?</h2>
+        <p style="max-width: 600px; margin-inline: auto; margin-bottom: 2rem;">
+          Take 5 minutes to complete our interactive Requirements Discovery Questionnaire and receive a comprehensive
+          project estimate.
+        </p>
+        <a href="discovery.html" class="btn btn-primary btn-lg btn-glow">Start Interactive Discovery →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 STUZEN TECHNOLOGIES. All rights reserved. Learn. Build. Innovate.</p>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="discovery.html" class="footer-link">Discovery Wizard</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Portfolio category filtering logic
+    document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.portfolio-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('.project-card').forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Case Study Detail Modal Data & Handler
+    const caseStudiesData = {
+      "Apex Logistics Global": {
+        category: "Web Platform",
+        image: "assets/images/portfolio/apex-logistics.svg",
+        metric: "📈 +320% Online Inquiries in 60 Days • 0.4s Instant Freight Calculator",
+        challenge: "Manual quotation requests were handled via email back-and-forth, causing an average 48-hour response delay and losing 60% of potential shippers to competitors.",
+        solution: "Stuzen engineered an automated responsive web rate calculator with instant WhatsApp booking dispatch, real-time container tracking, and a client self-service portal.",
+        tags: ["Jamstack", "HTML5/CSS3", "JavaScript ES6+", "WhatsApp Business API", "Cloudflare CDN"]
+      },
+      "HealthSync Clinic Portal": {
+        category: "AI Automation",
+        image: "assets/images/portfolio/healthsync-clinic.svg",
+        metric: "⚡ 75% Reduction in Admin Overhead • Zero Double Bookings",
+        challenge: "Clinic receptionists spent over 25 hours weekly answering repetitive appointment booking calls, leading to phone congestion and high patient no-show rates.",
+        solution: "Implemented an autonomous AI triage and WhatsApp scheduling bot integrated directly with doctor calendars, SMS reminders, and clinic CRM sync.",
+        tags: ["AI Agent", "WhatsApp Cloud API", "Python FastAPI", "Google Calendar Sync", "SMS Webhooks"]
+      },
+      "FinPulse Analytics Suite": {
+        category: "Custom Software",
+        image: "assets/images/portfolio/finpulse-analytics.svg",
+        metric: "🛡️ 99.99% Cloud Service Uptime • 100% Automated Invoicing",
+        challenge: "Fragmented spreadsheets and disjointed billing tools created reconciliation discrepancies, delayed month-end closing, and customer billing inquiries.",
+        solution: "Architected a custom multi-tenant SaaS dashboard featuring automated recurring Stripe billing, role-based access control, and instant financial ledger export.",
+        tags: ["Custom ERP", "Node.js", "PostgreSQL", "Stripe Webhooks", "Docker DevOps"]
+      },
+      "Verve Artisan Store": {
+        category: "E-Commerce",
+        image: "assets/images/portfolio/verve-artisan.svg",
+        metric: "🚀 4.2x Faster Checkout Conversion • 48% Cart Recovery Rate",
+        challenge: "High cart abandonment rates on mobile devices due to a sluggish, cluttered multi-step checkout process and lack of localized payment options.",
+        solution: "Designed a lightweight 1-step checkout web store with instant Razorpay/Stripe integration, automated abandoned cart WhatsApp recovery, and PWA offline caching.",
+        tags: ["Speed E-Commerce", "Razorpay / Stripe", "PWA Cache", "WhatsApp Recovery", "Core Web Vitals"]
+      },
+      "Terra Capital Ventures": {
+        category: "Corporate Web",
+        image: "assets/images/portfolio/terra-capital.svg",
+        metric: "🏆 99/100 Google Lighthouse Score • Sub-Second Page Speed",
+        challenge: "Legacy slow-loading WordPress corporate site that failed to reflect the firm's prestigious venture portfolio or provide a secure portal for Limited Partners.",
+        solution: "Built a sleek, unbloated Jamstack web platform with interactive portfolio filtering, secure investor document vault, and mobile-first responsiveness.",
+        tags: ["Corporate Brand", "Minimalist Architecture", "Netlify Edge", "Secure Vault", "SEO Dominance"]
+      },
+      "AutoDispatch Field Service": {
+        category: "AI Automation",
+        image: "assets/images/portfolio/autodispatch-field.svg",
+        metric: "📍 80% Faster First Response • 35% Route Fuel Savings",
+        challenge: "Emergency field service requests were manually routed, leading to long technician transit times and frustrated commercial clients.",
+        solution: "Developed an AI-driven geolocation dispatch bot that automatically analyzes incoming service tickets and dispatches the nearest technician via WhatsApp with live GPS coordinates.",
+        tags: ["AI Dispatch Bot", "WhatsApp API", "Geolocation Routing", "FastAPI", "Live Webhooks"]
+      }
+    };
+
+    const modal = document.getElementById('caseStudyModal');
+    const closeBtn = document.getElementById('modalCloseBtn');
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const title = card.querySelector('.project-title')?.textContent.trim();
+        const data = caseStudiesData[title];
+        if (data && modal) {
+          document.getElementById('modalTitle').textContent = title;
+          document.getElementById('modalCategory').textContent = data.category;
+          document.getElementById('modalMetric').innerHTML = `<span>${data.metric}</span>`;
+          document.getElementById('modalChallenge').textContent = data.challenge;
+          document.getElementById('modalSolution').textContent = data.solution;
+
+          const modalImg = document.getElementById('modalImg');
+          if (modalImg && data.image) {
+            modalImg.src = data.image;
+            modalImg.alt = title + ' Architecture Preview';
+          }
+
+          const tagsContainer = document.getElementById('modalTags');
+          tagsContainer.innerHTML = '';
+          data.tags.forEach(t => {
+            const span = document.createElement('span');
+            span.className = 'project-tag';
+            span.textContent = t;
+            tagsContainer.appendChild(span);
+          });
+
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>
